@@ -3,11 +3,29 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .form{
     display: flex;
     justify-content: space-evenly;
     gap: 32px;
+}
+#price{
+   width: 232px;
+   height: 32px;
+   border: 1px solid rgb(172, 147, 235);
+}
+#month{
+    width: 232px;
+   height: 32px;
+   border: 1px solid rgb(172, 147, 235);
+}
+#percent{
+    width: 232px;
+   height: 32px;
+   border: 1px solid rgb(172, 147, 235);
 }
 .tableForms{
     display: flex;
@@ -23,10 +41,6 @@ body{
     margin-top: 27px;
     margin-right: 400px;
 }
-#texts{
-    width: 260px;
-    height: 41px;
-}
 .heading1{
     display: flex;
     justify-content: center;
@@ -36,20 +50,26 @@ body{
 .button1{
     display: block;
     cursor: pointer;
-    background-color: rgb(64, 64, 255);
+    background-color: rgb(5, 5, 250);
     color: white;
-    border: 20px solid rgb(64, 64, 255);
+    border: 15px solid rgb(5, 5, 250);
     border-radius: 10px;
-    height: 52px;
+    height: 44px;
+}
+.button1:hover{
+    opacity: 0.7;
 }
 .button2{
     display: block;
     cursor: pointer;
     background-color: rgb(255, 0, 0);
     color: white;
-    border: 20px solid rgb(255, 0, 0);
+    border: 15px solid rgb(255, 0, 0);
     border-radius: 10px;
-    height: 52px;
+    height: 44px;
+}
+.button2:hover{
+    opacity: 0.7;
 }
 .heading2{
     display: flex;
@@ -57,16 +77,12 @@ body{
     align-items: center;
     font-size: 25px;
 }
-.block{
-    display: block;
-    border: 1px solid gray;
-    width: 200px;
-    height: 100px;
-    margin-left: 406px;
+.wrapper{
+    display: flex;
+    margin-left: 270px;
+    width: 1060px;
+    flex-wrap: wrap;
 }
-.block p{
-    text-align: center;
-}
-.date{
-    padding-bottom: 10px;
-}   
+.container{ 
+    width: 80%;
+ }
